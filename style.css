@@ -1,60 +1,99 @@
-body {
+* {
     margin: 0;
-    font-family: Arial;
-    background: #67e9ee;
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+/* Navbar */
 header {
+    background: #333;
+    color: white;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background: #3bacbb;
+    align-items: center;
 }
 
 nav a {
     color: white;
-    margin: 10px;
+    margin: 0 10px;
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
 .hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae') no-repeat center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 100px;
-    background: linear-gradient(to right, #3aaf4d, #79dd8f);
+
+}
+
+.hero h2 {
+    font-size: 50px;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 20px;
 }
 
 .hero button {
     padding: 10px 20px;
     border: none;
-    background: rgb(93, 209, 103);
+    background: #ff9800;
     color: white;
     cursor: pointer;
+    font-size: 16px;
 }
 
-section {
-    padding: 50px;
-    text-align: center;
+.hero button:hover {
+    background: #e68900;
 }
 
-.skills ul {
-    list-style: none;
-}
-
-.projects {
+/* Houses Section */
+.houses {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 40px;
 }
 
 .card {
-    background: #1e8cad;
-    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     border-radius: 10px;
-    width: 150px;
-}
-footer {
+    overflow: hidden;
     text-align: center;
-    padding: 20px;
-    background: #1e293b;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px 20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
