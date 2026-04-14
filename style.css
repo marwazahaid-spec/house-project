@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #67e9ee;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #3bacbb;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(to right, #3aaf4d, #79dd8f);
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background: rgb(93, 209, 103);
+    color: white;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #1e8cad;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+}
